@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="LoginForm" prefHeight="409.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.LoginFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="127.0" layoutY="229.0" onAction="#txtUserNameOnAction" prefHeight="24.0" prefWidth="164.0" promptText="Username" />
+      <TextField fx:id="txtPassword" layoutX="127.0" layoutY="275.0" onAction="#txtPasswordOnAction" prefHeight="24.0" prefWidth="164.0" promptText="Password" />
+      <JFXButton fx:id="btnLogin" layoutX="147.0" layoutY="338.0" onAction="#btnLoginOnAction" prefHeight="24.0" prefWidth="100.0" styleClass="btn" stylesheets="@../style/CSS.css" text="Login" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="134.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/24-248235_user-profile-avatar-login-account-fa-user-circle.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

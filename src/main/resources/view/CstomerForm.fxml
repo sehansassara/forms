@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerForm" prefHeight="347.0" prefWidth="498.0" style="-fx-background-color: #1289A7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.CstomerFormController">
+   <children>
+      <Label layoutX="97.0" layoutY="24.0" text="Customer Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerID" layoutX="12.0" layoutY="90.0" onAction="#txtCustomerIDOnAction" prefHeight="24.0" prefWidth="154.0" promptText="Customer ID" />
+      <TextField fx:id="txtCustomerName" layoutX="12.0" layoutY="120.0" onAction="#txtCustomerNameOnAction" prefHeight="24.0" prefWidth="154.0" promptText="Custome Name" />
+      <TextField fx:id="txtCustomerAddress" layoutX="12.0" layoutY="150.0" onAction="#txtCustomerAddressOnAction" prefHeight="24.0" prefWidth="154.0" promptText="Customer Address" />
+      <JFXButton fx:id="btnSave" layoutX="53.0" layoutY="214.0" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: gray;" text="Save" />
+      <JFXButton fx:id="btnUpdate" layoutX="53.0" layoutY="244.0" onAction="#btnUpdateOnAction" style="-fx-background-color: gray;" text="Update" />
+      <JFXButton fx:id="btnDelete" layoutX="53.0" layoutY="274.0" onAction="#btnDeleteOnAction" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: gray;" text="Delete" />
+      <TableView fx:id="tblCustomer" layoutX="172.0" layoutY="74.0" onMouseClicked="#OnMouseClicked" prefHeight="233.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="85.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="116.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="118.0" text="Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

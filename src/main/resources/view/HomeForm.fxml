@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="Homeform" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.HomeFormController">
+   <children>
+      <JFXButton fx:id="btnCustomer" layoutX="9.0" layoutY="99.0" onAction="#btnCustomerOnAction" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #B53471;" text="Customer" />
+      <JFXButton fx:id="btnItem" layoutX="9.0" layoutY="150.0" onAction="#btnItemOnAction" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #B53471#B53471#B53471#B53471#B53471#B53471#B53471;" text="Item" />
+      <JFXButton fx:id="btnLogout" layoutX="9.0" layoutY="341.0" onAction="#btnLogOutOnAction" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: #B53471#B53471#B53471#B53471#B53471#B53471#B53471;" text="LogOut" />
+      <AnchorPane fx:id="ControllArea" layoutX="102.0" layoutY="53.0" prefHeight="347.0" prefWidth="498.0" style="-fx-background-color: #9980FA;" />
+   </children>
+</AnchorPane>
